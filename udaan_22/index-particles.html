@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UDAAN'22</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body id="top" class="theme-particles">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+
+        <!-- # header
+        ================================================== -->
+        <header class="s-header">
+            <div class="s-header__content">
+
+                <div class="s-header__logo">
+                    <a class="logo" href="index-particles.html">
+                        <img src="images/logo.png" alt="Homepage">
+                    </a>
+                </div>
+
+                <ul class="s-header__social">
+                    <li>
+                        <a href="">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg> -->
+                            <i class="fab fa-facebook" style="font-size:24px;color:white;"></i>
+                            <span class="screen-reader-text">Facebook</span>
+                        </a>
+                        </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/teamudaan/?utm_medium=copy_link">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg> -->
+                            <i class="fab fa-instagram" style="font-size:24px;color:white;"></i>
+                            <span class="screen-reader-text">Instagram</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/c/createudaan">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg> -->
+                            <i class="fab fa-youtube" style="font-size:24px;color:white;"></i>
+                            <span class="screen-reader-text">Youtube</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+
+            </div> <!-- end s-header__content -->
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro 
+        ================================================== -->
+        <section id="intro" class="s-intro">
+
+            <div id="particles-js" class="s-intro__particles"></div>
+
+            <div class="row s-intro__content">
+                <div class="column lg-12">
+                    <p id="udaanspan" style="color: white;">Udaan'22</p>
+
+                    <div class="counter">
+                        <div class="counter__time">
+                            <span class="ss-days">6</span>
+                            <span>days</span>
+                        </div>
+                        <div class="counter__time">
+                            <span class="ss-hours">01</span>
+                            <span>hours</span>
+                        </div>
+                        <div class="counter__time minutes">
+                            <span class="ss-minutes">01</span>
+                            <span>mins</span>
+                        </div>
+                        <div class="counter__time">
+                            <span class="ss-seconds">55</span>
+                            <span>secs</span>
+                        </div>
+                    </div> <!-- end counter -->
+
+                    <div class="s-intro__content-bottom">
+                        <h1 id="soon" style=" color: white;">Coming Soon.... </h1>
+                        <p>
+                            The most awaited TECHNO-CULTURAL <br>
+                            fest of BVM. 
+                             </p>
+                    </div>
+
+                </div>
+
+                <div class="s-intro__scroll">
+                    <p class="scroll-text">Scroll For More</p>
+                    <a href="#info" class="smoothscroll">
+                        <div class="mouse"></div>
+                    </a>
+                    <div class="end-top"></div>
+                </div> <!-- end s-intro__scroll -->
+
+            </div> <!-- intro__content -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # info
+        ================================================== -->
+        <section id="info" class="s-info">
+
+            <div class="s-info__bg"></div>
+
+            <div class="row">
+                <div class="column lg-12">
+
+                    <nav class="tab-nav">
+                        <ul class="tab-nav__list">
+                            <li class="active" data-id="tab-about">
+                                <a href="#tab-ABOUT BVM">
+                                    About BVM
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-ABOUT UDAAN">
+                                    About UDAAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-OUR TEAM">
+                                    Our Team 
+                                </a>
+                            </li>
+                        </ul>
+                    </nav> <!-- end tab-nav -->
+
+                    <div class="tab-content">
+
+                        <!-- 01 - tab about BVM-->
+                        <div id="tab-about" class='tab-content__item'>
+
+                            
+                            <div class="logo">
+                                <img src="https://bvmengineering.ac.in/images/BVM%20Logo-1.png" alt="" height="150" width="140">
+                            </div>
+                            <div class="row tab-content__item-header">
+                                <div class="column">
+                                    
+                                    
+                                    <h2 style="text-align: center;">Get To Know Us</h2>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <p class="lead">
+                                        Birla Vishvakarma Mahavidyalaya Engineering College was established in 1948 from donations made by the Birla Education Trust on the behest of Sardar Vallabhbhai Patel, the first Home Minister of independent India. The college was inaugurated by Lord Mountbatten, the Governor General of India on 14 June 1948, and rose to prominence under the stewardship of Prof. Junarkar and Prof. K.M. Dholakia. It was one of the first few colleges in India that adopted the progressive credit system of relative grading in India. The college has awarded degrees to over 17,000 graduates, and has its alumni spread across the globe.
+                                    </p>
+
+                                    <p class="lead">
+                                       The first fifty years of CVM coincided more or less with the second half of the twentieth century. Judged by any yardstick, these first fifty years of CVM have been immensely successful. The vision, dedication and commitment of the founders of CVM and its sunsequent leaders can be seen clearly today in the results of their tireless efforts. Vallabh Vidyanagar is today an impressive and thriving educational campus in the heart of CHARUTAR,which is itself heartland of Gujrat. Naturally CVM must also make future plans which enable it to generate successful response to some of the challenges which the soceity going to face.
+                                    </p>
+
+                                    
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <!-- end 01 - tab about BVM -->
+                    <!-- 02 - tab ABOUT UDAAN -->
+                    <div id="tab-contact" class="tab-content__item">
+
+                        <div class="row tab-content__item-header">
+                            <div class="column">
+                                <h2>Annual Techno-Cultural Fest of BVM Engineering College</h2>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+
+                                <p class="lead">
+                                    The Tech Fest of our college which aims to enhance the technical competence and professional skills of students.
+                                    A series of Technical events and Competitions will be organized to provide an opportunity for students to conquer the futuristic problems associated with humanity.
+                                    Next Step towards the Holistic development of BVM Students
+
+                                </p>
+
+                                
+
+                                
+                            </div>
+                        </div>
+
+                    </div> <!-- end 02 - tab ABOUT UDAAN -->
+
+                    </div> <!-- end tab content -->
+
+                        <!-- 03 - tab OUR TEAM -->
+                        <div id="tab-services" class='tab-content__item'>
+
+                            <div class="row tab-content__item-header">
+                                <div class="column">
+                                    <h2>Core Team </h2>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <p class="lead">
+                                        We the team udaan are very excited to share our core team members.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row services-list block-lg-one-half block-md-one-half block-tab-whole">
+
+                                <div class="column services-list__item">
+                                    
+                                    <div class="services-list__item-content">
+                                        <h4 class="item-title">General Secretary</h4>
+                                        <p class="bold-team-members">
+                                            <ul class="members">
+                                                <li>
+                                                    Zeelrajsinh Mahida 
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="column services-list__item">
+                                    
+                                    <div class="services-list__item-content">
+                                        <h4 class="item-title">Ladies Representative</h4>
+                                        <p class="bold-team-members">
+                                            <ul class="members">
+                                                <li class="members">
+                                                    Pankti Shah 
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="column services-list__item">
+                                                                    
+                                    <div class="services-list__item-content">
+                                        <h4 class="item-title">Sponsorship Heads</h4>
+                                        <p class="bold-team-members">
+                                            <ul class="members">
+                                                <li>Shrey Shah</li>
+                                                <li>Rutvik Maheshwari</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="column services-list__item">
+                                    
+                                    <div class="services-list__item-content">
+                                        <h4 class="item-title">Cultural Heads</h4>
+                                        <p class="bold-team-members">
+                                            <ul class="members">
+                                                <li>Kartik Desai</li>
+                                                <li>Nawaaz Basha</li>
+                                            </ul>    
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="column services-list__item">
+                                    
+                            <div class="services-list__item-content">
+                                <h4 class="item-title">All Event Managers
+                                        </h4>
+                                        <p class="bold-team-members">
+                                            <ul class="members">
+                                                <li>Jay Patel</li>
+                                                <li>Gaurav Barve </li>
+                                            </ul>                        
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="column services-list__item">
+                                    <div class="services-list__item-content">
+                                        <h4 class="item-title">Graphics and Design Heads</h4>
+                                        <p class="bold-team-members">
+                                            <ul class="members">
+                                                <li>Uttam Sorathiya</li>
+                                                <li>Ritik Panchal</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="column services-list__item">
+                                    <div class="services-list__item-content">
+                                        <h4 class="item-title">Discipline Heads</h4>
+                                        <p class="bold-team-members">
+                                            <ul class="members">
+                                                <li>Sudeep More</li>
+                                                <li>Bhavya Vadher</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="column services-list__item">
+                                    <div class="services-list__item-content">
+                                        <h4 class="item-title">Logistics Heads</h4>
+                                        <p class="bold-team-members">
+                                            <ul class="members">
+                                                <li>Mayank Shiyaniya</li>
+                                                <li>Arjun Patoliya</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="column services-list__item">    
+                                    <div class="services-list__item-content">
+                                        <h4 class="item-title">Finance Advisor</h4>
+                                        <p class="bold-team-members">
+                                            <ul class="members">
+                                                <li>
+                                                    Dhruvil Modh
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="column services-list__item">  
+                                    <div class="services-list__item-content">
+                                        <h4 class="item-title">Marketing Heads</h4>
+                                        <p class="bold-team-members">
+                                            <ul class="members">
+                                                <li>
+                                                    Atharva Bhave
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="column services-list__item">                           
+                                    <div class="services-list__item-content">
+                                        <h4 class="item-title">Documentation Heads</h4>
+                                        <p class="bold-team-members">
+                                           <ul class="members">
+                                               <li>Pranav Shah</li>
+                                               <li>Setu Thacker</li>
+                                               <li>Dhruvi Kunwarani</li>
+                                           </ul>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="column services-list__item">                                  
+                                    <div class="services-list__item-content">
+                                        <h4 class="item-title">Developers Heads</h4>
+                                        <p class="bold-team-members">
+                                            <ul class="members">
+                                                <li>Jeet Pandya</li>
+                                                <li>Manav Patel</li>
+                                                <li>Hit Patel</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="column services-list__item">                                    
+                                    <div class="services-list__item-content">
+                                        <h4 class="item-title">Decoration Heads</h4>
+                                        <p class="bold-team-members">
+                                           <ul class="members">
+                                               <li >Priya Tandel</li>
+                                               <li>Harshil Patel</li>
+                                               <li>Shubham Patel</li>
+                                           </ul>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="column services-list__item">                                 
+                                    <div class="services-list__item-content">
+                                        <h4 class="item-title">Tech Heads</h4>
+                                        <p class="bold-team-members">
+                                            <ul class="members">
+                                                <li> Jaimin Shimpi</li>
+                                                <li> Ibrahim Koicha</li>
+                                                <li>Venu Upadhyay</li>
+                                                <li> Galav Bhatt</li>
+                                            </ul>                                         
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div> <!-- end services-list -->
+
+                        </div> <!-- end 03 - tab OUR TEAM -->
+
+                        
+                </div> <!-- end column -->
+            </div> <!-- end row -->
+
+        </section> <!-- end s-info -->
+
+
+        <!-- # footer
+        ================================================== -->
+        <footer class="s-footer">
+
+            <div class="row s-footer__top">
+
+                <div class="column lg-6 stack-on-700 s-footer__block s-footer__info">
+
+                    <h4 class="h6">Team Udaan </h4>
+
+                    <p class="desc">
+                        The Tech Fest of our college which aims to enhance the technical competence and professional skills of students.
+                        Next Step towards the Holistic development of BVM Students.
+
+                    </p>
+
+                    <ul class="s-footer__social">
+                        <li>
+                            <a href="">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg> -->
+                                <i class="fab fa-facebook" style="font-size:24px;color:white;"></i>
+                                <span class="screen-reader-text">Facebook</span>
+                            </a>
+                            </li>
+                        <li>
+                            <a href="https://www.youtube.com/c/createudaan">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg> -->
+                                <i class="fab fa-youtube" style="font-size:24px;color:white;"></i>
+                                <span class="screen-reader-text">Youtube</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.instagram.com/teamudaan/?utm_medium=copy_link">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg> -->
+                                <i class="fab fa-instagram" style="font-size:24px;color:white;"></i>
+                                <span class="screen-reader-text">Instagram</span>
+                            </a>
+                        </li>
+    
+                    </ul>
+
+                </div> <!-- end s-footer__info -->
+
+                <div class="column lg-6 stack-on-700 s-footer__block s-footer__contact">
+
+                    <h4 class="h6">Contact Info</h4>
+
+                    <div class="row">
+                        <div class="column lg-6 stack-on-1000 col">
+                            <p>
+                            <strong>Call</strong> <br>
+                            <a href="tel:123-456-9000">02692-230-104</a>
+                            </p>
+                        </div>
+                        <div class="column lg-6 stack-on-1000">
+                            <p>
+                            <strong>Email</strong> <br>
+                            <a href="mailto:#0">hello@khronos.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>
+                    <strong>Address</strong> <br>
+                    BVM Engineering College,  <br>
+                    Vallabh Vidyanagar - 
+                    388 120. GUJARAT, INDIA. <br>
+                    </p>
+
+                </div> <!-- end s-footer__contact -->
+
+            </div> <!-- end s-footer__top -->
+
+            <div class="row s-footer__bottom">
+                <div class="column lg-12">
+                    <div class="ss-copyright">
+                        <span>© Copyright Udaan 2022. All Rights Reserved</span>
+                        <span>Design by Developer Team</span>
+                    </div>
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                            <path d="M6 4H18V6H6zM11 14L11 20 13 20 13 14 18 14 12 8 6 14z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!--end s-footer__bottom -->
+
+        </footer>
+        <!--end s-footer -->
+
+    </div> <!-- end pagewrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/particle-settings.js"></script>
+
+</body>
+
+</html>
